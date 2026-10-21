@@ -1,8 +1,9 @@
 # Containerized Public Safety Data Lakehouse Pipeline
-## 🔗 Live Analytics Dashboard
-👉 [Click here to view the live interactive Looker Studio Dashboard](https://datastudio.google.com/reporting/79e7aacd-db17-4ecc-9d98-322b808de409)
 
 A production-grade, local data engineering pipeline that extracts public safety data from a REST API, establishes an immutable columnar file-based Data Lake (Bronze Layer), and executes transactional SQL transformations inside an embedded data warehouse (Gold Layer) utilizing **Python**, **SQL**, **DuckDB**, and **Docker**.
+
+## 🔗 Live Analytics Dashboard
+👉 [Click here to view the live interactive Looker Studio Dashboard](https://datastudio.google.com/reporting/79e7aacd-db17-4ecc-9d98-322b808de409)
 
 ## 📊 Pipeline Architecture & Data Flow
 
