@@ -49,6 +49,13 @@ def run_transformations():
     """).fetchall()
     
     print("📊 Top 3 Crime Categories Sample:", sample)
+        # 4. Export the clean production table to a CSV for BI tools
+    print("📋 Exporting optimized visualization layer to CSV...")
+    conn.execute("""
+        COPY analytic_daily_crime_summary 
+        TO 'data/analytics/reporting_crime.csv' 
+        (HEADER, DELIMITER ',');
+    """)
     conn.close()
     print("✅ Transformations complete and saved to disk.")
 
